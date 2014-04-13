@@ -1,3 +1,12 @@
+GIT
+  remote: git@github.com:fastly/fastly-rails.git
+  revision: 567d6145bedd78e96bc0e7a1797617c724b04f08
+  branch: add-fastly-client
+  specs:
+    fastly_rails (0.0.1)
+      fastly
+      rails
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -35,8 +44,16 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    curb (0.8.5)
+    curb-fu (0.6.2)
+      curb (>= 0.5.4.0)
+      rack-test (>= 0.2.0)
     erubis (2.7.0)
     execjs (2.0.2)
+    fastly (1.02)
+      curb (>= 0.7.15)
+      curb-fu (>= 0.6.1)
+      json
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (1.5.3)
@@ -109,6 +126,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  fastly_rails!
   jbuilder (~> 1.2)
   jquery-rails
   rails (= 4.0.2)

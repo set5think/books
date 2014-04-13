@@ -32,6 +32,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'fastly_rails', git: 'git@github.com:fastly/fastly-rails.git', branch: 'add-fastly-client'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
