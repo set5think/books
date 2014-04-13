@@ -1,0 +1,12 @@
+<div>
+  <%= form_for @book, method: _method do |c| %>
+    <div class="">
+      <p> <%= c.label :name %>:<br />
+          <%= c.text_field :name %>
+      </p>
+    </div>
+     <div class="">
+       <%= c.submit 'Save' %>
+     </div>
+  <% end %>
+</div>
